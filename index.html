@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, My Love!</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        /* Header Styling */
+        header h1 {
+            color: #d63384;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        /* Navigation Styling */
+        nav {
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d63384;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #b0246a;
+        }
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Floating Heart Animation */
+        .floating-heart {
+            width: 100px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Valentine's Day, SuMo!</h1>
+        <p>From your loving Soulmate</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">My Memories</a>
+        <a href="letter.html">My Love Letter</a>
+        <a href="surprise.html">A Surprise</a>
+        <a href="radha.html">My Radha</a>
+        <a href="family.html">Family Treasures</a>
+        <a href="saree.html">My Saree Beauty</a>
+    </nav>
+    <main>
+        <p>Every moment with you is a treasure. Click around to see why you're my everything.</p>
+        <img src="heart.gif" alt="Heart animation" class="floating-heart">
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Saree Beauty</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        /* Header Styling */
+        header h1 {
+            color: #d63384;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        /* Navigation Styling */
+        nav {
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d63384;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #b0246a;
+        }
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Saree Page Styling */
+        .saree-page {
+            text-align: center;
+            padding: 20px;
+        }
+        .saree-photo {
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .saree-photo:hover {
+            transform: scale(1.05);
+        }
+        .poem {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #d63384;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .saree-photo {
+                width: 250px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Saree Beauty</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">My Memories</a>
+        <a href="letter.html">My Love Letter</a>
+        <a href="surprise.html">A Surprise</a>
+        <a href="radha.html">My Radha</a>
+        <a href="family.html">Family Treasures</a>
+        <a href="saree.html">My Saree Beauty</a>
+    </nav>
+    <main class="saree-page">
+        <img src="saree.jpeg" alt="My beautiful Soulmate in a saree" class="saree-photo">
+        <div class="poem">
+            <p>In the drape of silk, your grace unfolds like a dream,</p>
+            <p>Eyes sparkling bright, a vision serene and supreme.</p>
+            <p>My heart dances to the rhythm of your saree's flow,</p>
+            <p>Eternal beauty, in every fold, I love you so.</p>
+            <p>A timeless elegance, forever my own.</p>
+        </div>
+        <audio id="letter-audio" autoplay loop controls>
+            <source src="Dulhan.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p style="font-size: 0.8em; color: #666;">(Click play if the music doesn't start automatically)</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
